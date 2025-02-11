@@ -2,8 +2,9 @@
 #include<stdio.h>
 
 int main(){
-    double f;
+    double f,k;
     scanf("%fl\n",&f);
-    printf("You entered: %.2fl",3.14*f*f);
+    k=3.14*f*f;
+    printf("You entered: %.2fl",k);
     return 0;
 }
