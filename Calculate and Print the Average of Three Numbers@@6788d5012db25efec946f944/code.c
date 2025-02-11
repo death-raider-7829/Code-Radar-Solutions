@@ -4,6 +4,8 @@
 int main(){
     int f,a,d;
     scanf("%d %d %dn",&f,&a,&d);
-    printf("You entered: %.2f",(f+a+d)/3);
+    float k;
+    k=(a+d+f)/3;
+    printf("You entered: %.2f",k);
     return 0;
 }
