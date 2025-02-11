@@ -5,6 +5,6 @@ int main(){
     double f,k;
     scanf("%lf\n",&f);
     k=3.14*f*f;
-    printf("You entered: %.2fl",k);
+    printf("You entered: %.2lf",k);
     return 0;
 }
