@@ -4,6 +4,6 @@
 int main(){
     int a,b;
     scanf("%d %d",&a,&b);
-    (a>b)? printf("True"):printf("False");
+    printf("%s", (a>b)? "True":"False");
     retun 0;
 }
