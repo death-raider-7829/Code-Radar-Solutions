@@ -4,6 +4,6 @@
 int main(){
     long int a;
     scanf("%d",&a);
-    a<<0;
+    a<<1;
     printf("%s",(a%2==0)?"Not Set":"Set");
 }
