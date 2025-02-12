@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 int main(){
-    int a;
+    int a,k;
     scanf("%d",a);
-    printf("%s",(a%2==0)?"Not Set":"Set");
+    k=a%2;
+    printf("%s",(k==0)?"Not Set":"Set");
 }
