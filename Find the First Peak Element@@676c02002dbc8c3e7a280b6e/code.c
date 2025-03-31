@@ -11,7 +11,7 @@ void peak(int arr[],int n){
             printf("%d",arr[n-1]);
             break;
         }
-        else{
+        else if(arr[i]==arr[i-1] && arr[i]==arr[i+1]){
             printf("-1");
             break;
         }
