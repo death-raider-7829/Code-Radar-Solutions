@@ -1,16 +1,16 @@
 // Your code here...
 int sorted(int arr[], int n){
-    int k=0
+    int k=0;
     for(int i=0;i<n-1;i++){
         if(arr[i]<arr[i+1] || arr[i]==arr[i+1]){
             k++;
         }
     }
     if(k==n-1){
-        printf("Sorted")
+        printf("Sorted");
     }
     else{
-        printf("Undorted")
+        printf("Undorted");
     }
 }
 
