@@ -13,7 +13,6 @@ int rot(int arr[], int n, int k){
     for(int i=0;i<n-k-1;i++){
         a[i+k]=arr[i];
     }
-    print(a,n);
 }
 void print(int arr[],int n){
     for(int i=0;i<n;i++){
@@ -27,7 +26,7 @@ int main(){
    
     int arr[n];
     for(int i=0;i<n;i++){
-        scanf("%d",arr[i]);
+        scanf("%d",&arr[i]);
     }
     scanf("%d",&k);
     rot(arr,n,k);
