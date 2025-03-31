@@ -2,7 +2,7 @@
 
 #include<stdio.h>
 
-int print(int arr[],int n){
+void print(int arr[],int n){
     for(int i=0;i<n;i++){
         printf("%d",arr[i]);
     }
@@ -28,6 +28,6 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",arr[i]);
     }
-
-    printf("%d", rot(arr,n,k));
+    rot(arr,n,k);
+    printf("%d", print(arr,n));
 }
