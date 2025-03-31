@@ -12,7 +12,7 @@ void print(int arr[],int n){
 int rot(int arr[], int n, int k){
     int a[n];
     k=k%n;
-    for(int i=n-k-1,j=0;i<n, j<k;i++,j++){
+    for(int i=n-k,j=0;i<n, j<k;i++,j++){
 
         a[j]=arr[i];
     }
