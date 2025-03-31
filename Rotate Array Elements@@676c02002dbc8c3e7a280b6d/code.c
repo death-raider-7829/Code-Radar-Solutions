@@ -28,5 +28,6 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",arr[i]);
     }
+
     printf("%d", rot(arr,n,k));
 }
