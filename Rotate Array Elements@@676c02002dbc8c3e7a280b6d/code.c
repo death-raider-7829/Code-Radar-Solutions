@@ -3,6 +3,11 @@
 #include<stdio.h>
 
 
+void print(int arr[],int n){
+    for(int i=0;i<n;i++){
+        printf("%d\n",arr[i]);
+    }
+}
 
 int rot(int arr[], int n, int k){
     int a[n];
@@ -15,11 +20,6 @@ int rot(int arr[], int n, int k){
     }
     print(a,n);
 
-}
-void print(int arr[],int n){
-    for(int i=0;i<n;i++){
-        printf("%d\n",arr[i]);
-    }
 }
 
 int main(){
