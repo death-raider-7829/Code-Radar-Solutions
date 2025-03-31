@@ -29,5 +29,5 @@ int main(){
         scanf("%d",arr[i]);
     }
     rot(arr,n,k);
-    printf("%d", print(arr,n));
+    print(arr,n);
 }
