@@ -13,6 +13,7 @@ void peak(int arr[],int n){
         }
         else{
             printf("-1");
+            break;
         }
     }
 }
