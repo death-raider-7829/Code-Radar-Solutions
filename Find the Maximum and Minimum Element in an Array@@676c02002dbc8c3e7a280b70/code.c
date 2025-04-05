@@ -1,18 +1,17 @@
 #include<stdio.h>
 
-int mami(int arr[],int n){
-    int max=arr[0],min=arr[0];
+void mami(int arr[],int n,int *max,int *min){
+    int *max=arr[0],*min=arr[0];
         for(int i=0;i<n;i++){
-            if(max<arr[i] || max==arr[i]){
-                max=arr[i];
+            if(*max<arr[i] || *max==arr[i]){
+                *max=arr[i];
             }
         }
         for(int j=0;j<n;j++){
-            if(min>arr[j] || min==arr[j]){
-                min=arr[j];
+            if(*min>arr[j] || *min==arr[j]){
+                *min=arr[j];
             }
         }
-        return max,min;
 }
 
 
@@ -23,5 +22,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    printf("%d %d",mami(arr,n));
+    int max,min;
+    mami(arr,n,&max,&min);
+    printf("%d %d",max,min);
 }
