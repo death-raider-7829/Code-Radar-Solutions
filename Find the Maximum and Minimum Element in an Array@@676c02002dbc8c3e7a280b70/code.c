@@ -21,5 +21,5 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    mami(arr,n);
+    printf("%d %d",mami(arr,n));
 }
