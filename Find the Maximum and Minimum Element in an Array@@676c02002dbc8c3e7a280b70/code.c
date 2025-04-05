@@ -10,10 +10,9 @@ int mami(int arr[],int n){
         for(int j=0;j<n;j++){
             if(min>arr[j] || min==arr[j]){
                 min=arr[j];
-                printf("%d",min);
             }
         }
-    return max,min;
+        return max,min;
 }
 
 
