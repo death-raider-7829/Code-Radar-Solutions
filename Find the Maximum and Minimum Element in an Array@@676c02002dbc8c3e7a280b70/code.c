@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int mami(int arr[],int n){
-    int max=arr[0],min=arr[0]{
+    int max=arr[0],min=arr[0];
         for(int i=0;i<n;i++){
             if(max<arr[i]){
                 max=arr[i];
@@ -10,9 +10,9 @@ int mami(int arr[],int n){
                 min=arr[i];
             }
         }
-    }
     return max,min;
 }
+
 
 int main(){
     int n;
