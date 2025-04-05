@@ -11,7 +11,7 @@ int mami(int arr[],int n){
             }
         }
         for(int j=0;j<n;j++){
-            if(min<arr[j] || min==arr[j]){
+            if(min>arr[j] || min==arr[j]){
                 min=arr[j];
             }
             else if(j==n-1){
