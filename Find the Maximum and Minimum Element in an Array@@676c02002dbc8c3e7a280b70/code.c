@@ -6,8 +6,10 @@ int mami(int arr[],int n){
             if(max<arr[i]){
                 max=arr[i];
             }
-            else if(min>arr[i]){
-                min=arr[i];
+        }
+        for(int j=0;j<n;j++){
+            if(min>arr[j]){
+                min=arr[j];
             }
         }
     return max,min;
