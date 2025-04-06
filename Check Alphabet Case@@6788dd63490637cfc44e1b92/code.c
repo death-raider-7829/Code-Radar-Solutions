@@ -1,17 +1,19 @@
 // Your code here...
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
+int main() {
     char a;
-    scanf("%c",&a);
-    a=(int)a;
-    if(a>64 && a<97){
-        printf("Uppercase");
+    scanf("%c", &a);
+    
+    if (a > 64 && a < 91) { 
+        printf("Uppercase\n");
     }
-    else if(a>95 && a<122){
-        printf("Lowercase");
+
+    else if (a > 96 && a < 123) { 
+        printf("Lowercase\n");
     }
-    else{
-        printf("Not an alphabet");
+    
+    else {
+        printf("Not an alphabet\n");
     }
 }
