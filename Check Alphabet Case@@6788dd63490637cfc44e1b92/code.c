@@ -5,7 +5,7 @@ int main(){
     char a;
     scanf("%c",&a);
     a=(int)a;
-    if(a>64 && a<93){
+    if(a>64 && a<94){
         printf("Uppercase");
     }
     else if(a>95 && a<122){
