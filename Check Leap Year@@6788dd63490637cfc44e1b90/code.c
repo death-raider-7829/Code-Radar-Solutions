@@ -3,6 +3,7 @@
 
 void leap(int a){
     if(a%100==0){
+        a=a/100;
         if(a%4==0){
             printf("Leap Year");
         }
