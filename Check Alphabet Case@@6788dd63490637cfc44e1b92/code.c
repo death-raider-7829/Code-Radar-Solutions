@@ -2,8 +2,9 @@
 #include<stdio.h>
 
 int main(){
-    int a;
-    scanf("%d",&a);
+    char a;
+    scanf("%c",&a);
+    a=int(a);
     if(a>64 && a<93){
         printf("Uppercase");
     }
