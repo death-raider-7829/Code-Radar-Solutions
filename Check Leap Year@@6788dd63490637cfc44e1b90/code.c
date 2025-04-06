@@ -15,7 +15,7 @@ void leap(int a){
     }
 }
 
-int main{
+int main(){
     int year;
     scanf("%d",&year);
     leap(year);
