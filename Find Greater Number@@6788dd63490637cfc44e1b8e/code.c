@@ -8,6 +8,9 @@ void mami(int *a,int *b){
     else if(*b>*a){
         printf("%d",*b);
     }
+    else{
+        printf("%d",*a);
+    }
 }
 
 int main(){
