@@ -4,7 +4,7 @@
 int main(){
     char a;
     scanf("%c",&a);
-    a=int(a);
+    a=(int)a;
     if(a>64 && a<93){
         printf("Uppercase");
     }
@@ -14,4 +14,3 @@ int main(){
     else{
         printf("Not an alphabet");
     }
-}
