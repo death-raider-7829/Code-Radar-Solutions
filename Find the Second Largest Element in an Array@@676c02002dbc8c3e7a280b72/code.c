@@ -17,8 +17,9 @@ int main(){
     for(int i=0; i<n;i++){
         if(n==1){
             printf("-1");
+
         }
-        if(arr[i]>sec && max>sec){
+        else if(arr[i]>sec && max>sec){
             sec=arr[i];
         }
     }
