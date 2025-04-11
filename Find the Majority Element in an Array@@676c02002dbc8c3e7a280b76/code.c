@@ -10,8 +10,8 @@ int main(){
     for(int i=0;i<n;i++){
         int x=0;
         while(x<i){
-            if(brr[x]!=arr[i] && x=i-1){
-                brr[count]=arr[i]
+            if(brr[x]!=arr[i] && x==i-1){
+                brr[count]=arr[i];
                 count++;
             }
         }
