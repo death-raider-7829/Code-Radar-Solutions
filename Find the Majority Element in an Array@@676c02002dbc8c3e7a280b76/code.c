@@ -1,39 +1,43 @@
-// Your code here...
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
+int main() {
     int n;
-    scanf("%d",&n);
-    int arr[n],brr[1000];
-    int count=0;
-    for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
+    scanf("%d", &n);
+
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    for(int i=0;i<n;i++){
-        int x=0;
-        while(x<i){
-            if(brr[x]!=arr[i] && x==i-1){
-                brr[count]=arr[i];
+
+    // Step 1: Find the candidate majority element using Boyer-Moore Voting Algorithm
+    int candidate = -1, count = 0;
+    for (int i = 0; i < n; i++) {
+        if (count == 0) {
+            candidate = arr[i];
+            count = 1;
+        } else {
+            if (arr[i] == candidate) {
                 count++;
-                
+            } else {
+                count--;
             }
-            x++;
         }
     }
 
-    for(int i=0;i<count;i++){
-        int z=0;
-        for(int j=0;j<n;j++){
-            if(brr[i]==arr[j]){
-                z++;
-            
-            if(z>(n/2)){
-                printf("%d",brr[i]);
-            }
-            else if((z<(n/2) || z==(n/2)) && i==count-1){
-                 printf("-1");
-                 }
-            }
+    // Step 2: Verify if the candidate is the majority element
+    int freq = 0;
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == candidate) {
+            freq++;
         }
     }
+
+    // Print the result
+    if (freq > n / 2) {
+        printf("%d\n", candidate);
+    } else {
+        printf("-1\n");
+    }
+
+    return 0;
 }
