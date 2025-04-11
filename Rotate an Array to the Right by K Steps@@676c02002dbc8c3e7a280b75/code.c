@@ -11,8 +11,8 @@ int main(){
     int k;
     scanf("%d",&k);
 
-   for(int i=n-1;i>0;i--){
-    int temp= arr[i];
+   for(int i=0;i<k;i++){
+    int temp= arr[n-1];
     int j=n-1;
     while(j>0){
         int a=arr[j];
