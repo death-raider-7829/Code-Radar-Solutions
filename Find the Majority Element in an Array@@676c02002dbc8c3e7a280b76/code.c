@@ -15,6 +15,7 @@ int main(){
             if(brr[x]!=arr[i] && x==i-1){
                 brr[count]=arr[i];
                 count++;
+                x++;
             }
         }
     }
