@@ -25,10 +25,11 @@ int main(){
         for(int j=0;j<n;j++){
             if(brr[i]==arr[j]){
                 z++;
-            }
+            
             if(z>(n/2)){
                 printf("%d",brr[i]);
             }
+        }
         }
     }
     if(z<(n/2) || z==(n/2)){
