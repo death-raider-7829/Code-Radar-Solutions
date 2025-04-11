@@ -30,7 +30,7 @@ int main(){
             if(z>(n/2)){
                 printf("%d",brr[i]);
             }
-            if((z<(n/2) || z==(n/2)) && i==count-1){
+            else if((z<(n/2) || z==(n/2)) && i==count-1){
                  printf("-1");
                  }
             }
