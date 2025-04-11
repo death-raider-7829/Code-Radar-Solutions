@@ -17,7 +17,7 @@ int main(){
         while(j<n-1){
             int a=arr[j];
             arr[j+1]=arr[j];
-            arr[j+1]=a;
+            arr[j]=a;
             j++;
         }
         arr[0]=temp;
