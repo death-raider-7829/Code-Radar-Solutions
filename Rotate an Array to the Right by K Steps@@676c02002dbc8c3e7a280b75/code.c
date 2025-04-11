@@ -10,12 +10,12 @@ int main(){
     }
     int k;
     scanf("%d",&k);
+    k=k%n;
 
    for(int i=0;i<k;i++){
     int temp= arr[n-1];
     int j=n-1;
     while(j>0){
-        int a=arr[j];
         arr[j]=arr[j-1];
         j--;
     }
