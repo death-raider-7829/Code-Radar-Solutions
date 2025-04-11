@@ -15,7 +15,9 @@ int main(){
         int temp=arr[n-1];
         int j=0;
         while(j<n-1){
+            int a=arr[j];
             arr[j+1]=arr[j];
+            arr[j+1]=a;
             j++;
         }
         arr[0]=temp;
