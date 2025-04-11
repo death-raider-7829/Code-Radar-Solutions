@@ -11,11 +11,13 @@ int main(){
     int k;
     scanf("%d",&k);
 
-   for(int i=0;i<n-1;i++){
-    int temp=arr[n-1];
-    int j=0;
-    while(j<n){
-    arr[i+1]=arr[i];
+   for(int i=n-1;i>0;i--){
+    int temp= arr[i];
+    int j=n-1
+    while(j>0){
+        int a=arr[j];
+        arr[j]=arr[j-1];
+        j--;
     }
     arr[0]=temp;
    }
